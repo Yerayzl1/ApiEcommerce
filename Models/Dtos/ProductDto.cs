@@ -15,4 +15,5 @@ public class ProductDto
   public DateTime? UpdateDate { get; set; } = null;
   // Relación con el modelo Category
   public int CategoryId { get; set; }
+  public string CategoryName { get; set; } = string.Empty;
 }
