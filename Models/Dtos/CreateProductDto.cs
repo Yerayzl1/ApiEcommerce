@@ -11,6 +11,5 @@ public class CreateProductDto
   public string SKU { get; set; } = string.Empty;
   public int Stock { get; set; }
   public DateTime? UpdateDate { get; set; } = null;
-  // Relación con el modelo Category
   public int CategoryId { get; set; }
 }

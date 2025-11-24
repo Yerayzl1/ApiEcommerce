@@ -10,7 +10,7 @@ public class ProductProfile : Profile
   public ProductProfile()
   {
     CreateMap<Product, ProductDto>().ReverseMap();
-    CreateMap<Product, CreateCategoryDto>().ReverseMap();
-    CreateMap<Product, UpdateProductDto>().ReverseMap();
+    CreateMap<CreateProductDto, Product>().ReverseMap();
+    CreateMap<UpdateProductDto, Product>().ReverseMap();
   }
 }
