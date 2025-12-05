@@ -38,6 +38,8 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true
     };
 });
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -66,6 +68,7 @@ app.UseHttpsRedirection();
 
 app.UseCors(PolicyNames.AllowSpecificOrigin);
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
